@@ -1,6 +1,8 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+const appPath = path.join(__dirname, 'apps', 'dictionary', 'client')
+
 module.exports = function () {
     const isProduction = process.env.NODE_ENV === 'production'
 
@@ -8,11 +10,11 @@ module.exports = function () {
         mode: isProduction ? 'production' : 'development',
         entry: [
             '@babel/polyfill', //includes regenerator runtime and core-js
-            './client/index.js'
+            path.join(appPath, 'index.js'),
         ],
         output: {
-            path: path.resolve(__dirname, 'public'),
-            filename: 'bundle.js'
+            path: path.join(__dirname, 'public', 'dict'),
+            filename: 'dict-bundle.js'
         },
         optimization: {
             minimize: isProduction,
@@ -23,15 +25,15 @@ module.exports = function () {
         },
         plugins: [
             new CopyWebpackPlugin([
-                {from: './icon.png'},
-                {from: './client/images'},
+                {from: 'icon.png'},
+                {from: path.join(appPath, 'images'),},
             ]),
         ],
         module: {
             rules: [
                 {
                     test: /\.(js|jsx)$/,
-                    include: path.resolve(__dirname, 'client'),
+                    include: appPath,
                     use: {
                         loader: 'babel-loader',
                         options: {
@@ -41,7 +43,7 @@ module.exports = function () {
                 },
                 {
                     test: /\.(css)$/,
-                    include: path.resolve(__dirname, 'client'),
+                    include: appPath,
                     use: [
                         {loader: 'style-loader'},
                         {loader: 'css-loader'},
