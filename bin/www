@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const app = require('../server/app')
+const app = require('../src/server')
 const debug = require('debug')('ganjing:www')
 const http = require('http')
 

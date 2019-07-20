@@ -5,9 +5,6 @@ const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const compression = require('compression')
 
-//Invoke db for init
-require('./db/db')
-
 const app = express()
 
 // ---------------------------------------------------------------------------------
@@ -31,7 +28,7 @@ app.use(compression())
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-app.use('/', require('./routes/render'))
+app.use('/', require('./root/server/routes/render'))
 
 
 // ---------------------------------------------------------------------------------
