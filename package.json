@@ -1,0 +1,38 @@
+{
+    "name": "ganjing",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build:prod": "rm -rf public; export NODE_ENV=production; webpack",
+        "build:watch": "rm -rf public; webpack --watch",
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "7.5.5",
+        "compression": "1.7.4",
+        "cookie-parser": "1.4.4",
+        "copy-webpack-plugin": "5.0.3",
+        "debug": "4.1.1",
+        "ejs": "2.6.2",
+        "express": "4.17.1",
+        "http-errors": "1.7.3",
+        "lowdb": "1.0.0",
+        "morgan": "1.9.1",
+        "node-fetch": "2.6.0",
+        "querystring": "0.2.0",
+        "react": "16.8.6",
+        "react-dom": "16.8.6"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.5.5",
+        "@babel/core": "7.5.5",
+        "@babel/polyfill": "7.4.4",
+        "@babel/preset-env": "7.5.5",
+        "@babel/preset-react": "7.0.0",
+        "babel-loader": "8.0.6",
+        "css-loader": "3.1.0",
+        "style-loader": "0.23.1",
+        "webpack": "4.36.1",
+        "webpack-cli": "3.3.6"
+    }
+}

@@ -1,0 +1,10 @@
+.artist-group {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 5px dashed #999;
+    text-align: center;
+}
+
+.artist-group:last-child {
+    border: none;
+}
