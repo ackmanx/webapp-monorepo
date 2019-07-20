@@ -1,5 +1,6 @@
 {
     "name": "ganjing",
+    "description": "These are dependencies for the entire heroku application and master server. Each application will have its own dependencies and package.json file, so this will serve to maintain core frameworks and libraries for all applications only.",
     "version": "0.0.0",
     "private": true,
     "scripts": {
