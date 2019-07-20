@@ -1,10 +1,12 @@
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const appPath = `${__dirname}/apps/dictionary/client` //todo: setup required
 
 module.exports = function () {
+    const appName = process.env.APP
+
     const isProduction = process.env.NODE_ENV === 'production'
+    const appPath = `${__dirname}/apps/${appName}/client`
 
     return {
         mode: isProduction ? 'production' : 'development',
@@ -13,8 +15,8 @@ module.exports = function () {
             `${appPath}/index.js`,
         ],
         output: {
-            path: `${__dirname}/public/dict`, //todo: setup required
-            filename: 'dict-bundle.js' //todo: setup required
+            path: `${__dirname}/public/${appName}`,
+            filename: 'bundle.js'
         },
         optimization: {
             minimize: isProduction,

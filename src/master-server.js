@@ -10,9 +10,7 @@ const app = express()
 // ---------------------------------------------------------------------------------
 // Engine setup
 // ---------------------------------------------------------------------------------
-app.set('views', [
-    `${__dirname}/../apps/dictionary/server/views` //todo: setup required
-])
+app.set('views', `${__dirname}/../src/views`)
 app.set('view engine', 'ejs')
 
 
@@ -30,7 +28,10 @@ app.use(compression())
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-app.use('/', require('../apps/dictionary/server/routes/render')) //todo: setup required
+//todo: left off here. I need middleware and a switch now or something
+//todo: I have to be able to use root url for each subdomain
+app.use('/', require('../apps/dict/server/routes/render')) //todo: setup required
+app.use('/', require('../apps/pinyin/server/routes/render')) //todo: setup required
 
 
 // ---------------------------------------------------------------------------------
