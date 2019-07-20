@@ -10,7 +10,9 @@ const app = express()
 // ---------------------------------------------------------------------------------
 // Engine setup
 // ---------------------------------------------------------------------------------
-app.set('views', path.join(__dirname, 'views'))
+app.set('views', [
+    path.join(__dirname, '..', 'apps', 'dictionary', 'server', 'views'),
+])
 app.set('view engine', 'ejs')
 
 
