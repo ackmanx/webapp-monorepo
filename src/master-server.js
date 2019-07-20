@@ -11,7 +11,7 @@ const app = express()
 // Engine setup
 // ---------------------------------------------------------------------------------
 app.set('views', [
-    path.join(__dirname, '..', 'apps', 'dictionary', 'server', 'views'),
+    `${__dirname}/../apps/dictionary/server/views` //todo: setup required
 ])
 app.set('view engine', 'ejs')
 
@@ -23,14 +23,14 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cookieParser())
-app.use(express.static(path.join(__dirname, '..', 'public')))
+app.use(express.static(`${__dirname}/../public`))
 app.use(compression())
 
 
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-app.use('/', require('../apps/dictionary/server/routes/render'))
+app.use('/', require('../apps/dictionary/server/routes/render')) //todo: setup required
 
 
 // ---------------------------------------------------------------------------------
@@ -40,14 +40,6 @@ app.use('/', require('../apps/dictionary/server/routes/render'))
 //If we made it this far, none of our routes were triggered, so it is a 404
 app.use(function (req, res, next) {
     next(createError(404))
-})
-
-app.use(function (err, req, res) {
-    // set locals, only providing error in development
-    res.locals.message = err.message
-    res.locals.error = req.app.get('env') === 'development' ? err : {}
-    res.status(err.status || 500)
-    res.render('error')
 })
 
 module.exports = app
