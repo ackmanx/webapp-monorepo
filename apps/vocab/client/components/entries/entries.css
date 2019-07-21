@@ -1,0 +1,56 @@
+.entries-panel {
+    width: calc(100% - 250px);
+}
+
+.entry {
+    position: relative;
+    border: 2px solid #2196f4;
+    margin: 20px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.entry .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.entry .menu.menu--open {
+    background-color: #2196f4;
+}
+
+.entry .menu button {
+    padding: 0 15px 15px 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 25px;
+}
+
+.entry .menu img {
+    padding: 15px 15px 15px 15px;
+    display: block;
+    max-height: 25px;
+    cursor: pointer;
+}
+
+.entry .menu img:hover {
+    background-color: #abdaff;
+}
+
+.entry .english {
+    border-top: 1px dashed #8c8c8c;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+/* -------------------------------------------------------------------- */
+/* Small View */
+/* -------------------------------------------------------------------- */
+
+.small-view .entries-panel {
+    width: auto;
+}

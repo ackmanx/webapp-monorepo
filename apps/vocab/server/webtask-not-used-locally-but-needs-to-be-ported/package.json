@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+        "body-parser": "1.8.4",
+        "express": "4.9.8",
+        "uuid": "3.3.2",
+        "webtask-tools": "3.4.0"
+    },
+    "what's this for": [
+        "When creating/updating a webtask, the service will check an adjacent package.json file",
+        "and install any dependencies listed on their servers. I keep this different than my main",
+        "package.json file to demonstrate these are only for webtasks",
+        ""
+    ]
+}

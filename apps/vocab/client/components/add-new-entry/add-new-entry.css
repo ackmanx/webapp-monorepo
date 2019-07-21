@@ -1,0 +1,102 @@
+.add-new-entry {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px dashed #2196f4;
+}
+
+.add-new-entry .inputs {
+    width: calc(100% - 75px);
+}
+
+.add-new-entry .submit {
+    display: flex;
+    width: 75px;
+    margin: 5px 0 5px 10px;
+}
+
+.add-new-entry .submit button {
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    color: #2a3035;
+    background-color: #abdaff;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.add-new-entry .submit button:disabled,
+.add-new-entry .submit button:disabled:hover,
+.add-new-entry .submit button:disabled:active {
+    background-color: #ccc;
+    border: none;
+    color: #000;
+    font-weight: normal;
+}
+
+.add-new-entry .submit button:hover {
+    background-color: #2196f4;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.add-new-entry .submit button:active {
+    background-color: #216cc7;
+}
+
+.add-new-entry .group {
+    display: flex;
+    align-items: center;
+}
+
+.add-new-entry label {
+    padding-right: 5px;
+    width: 65px;
+    text-align: right;
+}
+
+.add-new-entry input {
+    flex: 1;
+    padding: 7px;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid #8c8c8c;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.add-new-entry input:hover {
+    border: 1px solid #2196f4;
+}
+
+/* -------------------------------------------------------------------- */
+/* Small View */
+/* -------------------------------------------------------------------- */
+
+.small-view .add-new-entry {
+    display: block;
+}
+
+.small-view .add-new-entry .inputs {
+    width: 100%;
+}
+
+.small-view .add-new-entry .group {
+    display: block;
+    align-items: center;
+}
+
+.small-view .add-new-entry input {
+    width: 90%;
+}
+
+.small-view .add-new-entry .submit {
+    width: 92%;
+}
+
+.small-view .add-new-entry .submit button {
+    padding: 5px;
+}
