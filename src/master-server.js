@@ -36,8 +36,7 @@ app.use(function (req, res, next) {
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-app.use('/pinyin', require('../apps/pinyin/server/routes/render'))
-app.use('/', require('../apps/dict/server/routes/render'))
+app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
 
 
 // ---------------------------------------------------------------------------------

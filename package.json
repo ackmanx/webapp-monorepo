@@ -3,9 +3,6 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "dict:build:prod": "npm run dict:clean; export APP=dict; export NODE_ENV=production; webpack",
-        "dict:build:watch": "npm run dict:clean; export APP=dict; webpack --watch",
-        "dict:clean": "rm -rf public/dict",
         "pinyin:build:prod": "npm run pinyin:clean; export APP=pinyin; export NODE_ENV=production; webpack",
         "pinyin:build:watch": "npm run pinyin:clean; export APP=pinyin; webpack --watch",
         "pinyin:clean": "rm -rf public/pinyin",
