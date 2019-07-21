@@ -6,6 +6,9 @@
         "pinyin:build:prod": "npm run pinyin:clean; export APP=pinyin; export NODE_ENV=production; webpack",
         "pinyin:build:watch": "npm run pinyin:clean; export APP=pinyin; webpack --watch",
         "pinyin:clean": "rm -rf public/pinyin",
+        "vocab:build:prod": "npm run vocab:clean; export APP=vocab; export NODE_ENV=production; webpack",
+        "vocab:build:watch": "npm run vocab:clean; export APP=vocab; webpack --watch",
+        "vocab:clean": "rm -rf public/vocab",
         "start": "node ./bin/www"
     },
     "dependencies": {

@@ -37,6 +37,7 @@ app.use(function (req, res, next) {
 // Routes
 // ---------------------------------------------------------------------------------
 app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
+app.use('/vocab', require('../apps/vocab/server/routes/router'))
 
 
 // ---------------------------------------------------------------------------------
