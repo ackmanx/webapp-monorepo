@@ -1,15 +1,18 @@
+<%# %>
+<%# Paths in this file are relative to the static server folder, which is `<project_root>/public` %>
+<%# %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title><%= title %></title>
-    <link id=favicon rel="shortcut icon" type=image/png href="/icon.png"/>
+    <link id=favicon rel="shortcut icon" type=image/png href="<%= appName %>/fav-icon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2196f3">
 </head>
 <body>
 
 <div id="root"></div>
-<!-- This is relative to `<project_root>/public` folder because that's where `master-server.js` sets up the static server -->
 <script src="<%= appName %>/bundle.js"></script>
 
 </body>

@@ -27,7 +27,6 @@ module.exports = function () {
         },
         plugins: [
             new CopyWebpackPlugin([
-                {from: 'icon.png'},
                 {from: `${appPath}/images`},
             ]),
         ],
