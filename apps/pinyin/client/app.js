@@ -9,12 +9,14 @@ export const App = () => {
     useEffect(() => {
         if (textareaEl.current) {
             textareaEl.current.focus()
+            textareaEl.current.value = localStorage.getItem('text')
         }
     }, [])
 
     const handleKeyUp = e => {
         const textarea = e.target
         textarea.value = convertToneNumbersToAccents(textarea.value)
+        localStorage.setItem('text', textarea.value)
     }
 
     return (
