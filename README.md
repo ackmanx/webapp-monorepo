@@ -9,9 +9,9 @@ This mini mono-repo contains all the applications I host on my single Heroku ins
 To add a new application, you need to configure a few things:
 
 1. Add a subdomain entry to `/etc/hosts` so you can access it
+    * If there's no TLD in the URL, Express won't pick up the subdomain in the request object
 1. Register the application with the `master-server`
-1. ??? Do I put npm scripts for each app in root `package.json` or run npm from each app's folder?
-1. Update `webpack.config.js` `output.path` for the new application
+1. update package.json
 
 # Deploying
 
