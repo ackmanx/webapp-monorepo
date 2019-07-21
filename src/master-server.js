@@ -24,14 +24,20 @@ app.use(cookieParser())
 app.use(express.static(`${__dirname}/../public`))
 app.use(compression())
 
+app.use(function (req, res, next) {
+    if (req.subdomains.length) {
+        req.url = `/${req.subdomains[0]}`
+    }
+
+    next()
+})
+
 
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-//todo: left off here. I need middleware and a switch now or something
-//todo: I have to be able to use root url for each subdomain
-app.use('/', require('../apps/dict/server/routes/render')) //todo: setup required
-app.use('/', require('../apps/pinyin/server/routes/render')) //todo: setup required
+app.use('/pinyin', require('../apps/pinyin/server/routes/render'))
+app.use('/', require('../apps/dict/server/routes/render'))
 
 
 // ---------------------------------------------------------------------------------
@@ -39,8 +45,8 @@ app.use('/', require('../apps/pinyin/server/routes/render')) //todo: setup requi
 // ---------------------------------------------------------------------------------
 
 //If we made it this far, none of our routes were triggered, so it is a 404
-app.use(function (req, res, next) {
-    next(createError(404))
+app.use(function (req, res) {
+    res.json({error: 404})
 })
 
 module.exports = app
