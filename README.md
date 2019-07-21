@@ -17,6 +17,7 @@ To add a new application, you need to configure a few things:
     * `<app-name>:clean`
 1. Add a subdomain entry to `/etc/hosts` so you can access it
     * If there's no TLD in the URL, Express won't pick up the subdomain in the request object
+1. Add a link to it in `app-selector.ejs`
 
 When developing, always start the node server at `npm start` and then whichever FE app you want to work on.
 

@@ -39,6 +39,10 @@ app.use(function (req, res, next) {
 app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
 app.use('/vocab', require('../apps/vocab/server/routes/router'))
 
+app.get('/', function (req, res) {
+    res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
+})
+
 
 // ---------------------------------------------------------------------------------
 // Error handling
