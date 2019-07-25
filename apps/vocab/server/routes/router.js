@@ -27,6 +27,16 @@ router.post('/category', function (req, res) {
     res.json({message: 'Saved!'})
 })
 
+router.delete('/category', function (req, res) {
+    const categories = db.getCategories()
+
+    categories[req.body.categoryId] = undefined
+
+    db.saveCategories(categories)
+
+    res.json({message: 'Deleted!'})
+})
+
 router.get('/entry', function (req, res) {
     res.json(db.getEntries())
 })
