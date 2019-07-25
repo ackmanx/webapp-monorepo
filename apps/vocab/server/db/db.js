@@ -20,3 +20,5 @@ exports.getCategories = () => db.get(SLICES.categories).value()
 exports.saveCategories = categories => db.set(SLICES.categories, categories).write()
 
 exports.getEntries = () => db.get(SLICES.entries).value()
+
+exports.saveEntries = entries => db.set(SLICES.entries, entries).write()

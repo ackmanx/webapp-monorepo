@@ -1,4 +1,4 @@
-import {trim, webtaskEntryUrl} from '../dumping-grounds'
+import {trim} from '../dumping-grounds'
 import {submit_new_entry_payload, submit_new_entry_start, submit_new_entry_stop} from './action-types'
 import {getAllEntries} from './get-all-entries'
 
@@ -14,7 +14,7 @@ export function submitNewEntry() {
             english: trim(state.buffer.english),
         }
 
-        fetch(webtaskEntryUrl,
+        fetch('/entry',
             {
                 method: 'POST',
                 headers: {

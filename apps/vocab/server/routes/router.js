@@ -41,4 +41,26 @@ router.get('/entry', function (req, res) {
     res.json(db.getEntries())
 })
 
+
+router.post('/entry', function (req, res) {
+    const entries = db.getEntries()
+
+    if (!entries[req.body.categoryId]) {
+        entries[req.body.categoryId] = []
+    }
+
+    entries[req.body.categoryId].push({
+        id: uuidv4(),
+        categoryId: req.body.categoryId,
+        hanzi: req.body.hanzi,
+        pinyin: req.body.pinyin,
+        english: req.body.english,
+    })
+
+    db.saveEntries(entries)
+
+    res.json({message: 'Saved!'})
+})
+
+
 module.exports = router
