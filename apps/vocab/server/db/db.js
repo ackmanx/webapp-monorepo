@@ -1,8 +1,7 @@
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 
-//Path relative to project root
-const db = low(new FileSync('apps/vocab/server/db/database.json'))
+const db = low(new FileSync(`${__dirname}/database.json`))
 
 const SLICES = {
     categories: 'categories',
