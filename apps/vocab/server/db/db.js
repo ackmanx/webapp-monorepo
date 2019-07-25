@@ -17,4 +17,6 @@ db
 
 exports.getCategories = () => db.get(SLICES.categories).value()
 
+exports.saveCategories = categories => db.set(SLICES.categories, categories).write()
+
 exports.getEntries = () => db.get(SLICES.entries).value()
