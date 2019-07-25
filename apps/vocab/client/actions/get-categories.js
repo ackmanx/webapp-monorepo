@@ -1,11 +1,10 @@
-import {webtaskCategoryUrl} from '../dumping-grounds'
 import {get_categories_payload, get_categories_start, get_categories_stop} from './action-types'
 
 export function getCategories() {
     return dispatch => {
         dispatch({type: get_categories_start})
 
-        fetch(webtaskCategoryUrl)
+        fetch('/category')
             .then(res => {
                 if (res.status !== 200) {
                     console.error('Uh oh. The webtask did not work!')
