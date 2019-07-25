@@ -1,4 +1,3 @@
-import {webtaskEntryUrl} from '../dumping-grounds'
 import {getAllEntries} from './get-all-entries'
 import {delete_entry_payload, delete_entry_start, delete_entry_stop} from './action-types'
 
@@ -11,7 +10,7 @@ export function deleteEntry(entryId, categoryId) {
             categoryId,
         }
 
-        fetch(webtaskEntryUrl,
+        fetch('/entry',
             {
                 method: 'DELETE',
                 headers: {

@@ -41,7 +41,6 @@ router.get('/entry', function (req, res) {
     res.json(db.getEntries())
 })
 
-
 router.post('/entry', function (req, res) {
     const entries = db.getEntries()
 
@@ -61,6 +60,21 @@ router.post('/entry', function (req, res) {
 
     res.json({message: 'Saved!'})
 })
+
+router.delete('/entry', function (req, res) {
+    const entries = db.getEntries()
+
+    const categoryToDeleteFrom = req.body.categoryId
+    const entryIdToDelete = req.body.entryId
+
+    const entryToDeleteIndex = entries[categoryToDeleteFrom].findIndex(entry => entry.id === entryIdToDelete)
+    const deleted = entries[categoryToDeleteFrom].splice(entryToDeleteIndex, 1)
+
+    db.saveEntries(entries)
+
+    res.json({message: 'Deleted!', deleted})
+})
+
 
 
 module.exports = router
