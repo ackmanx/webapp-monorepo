@@ -7,7 +7,7 @@ export function getCategories() {
         fetch('/category')
             .then(res => {
                 if (res.status !== 200) {
-                    console.error('Uh oh. The webtask did not work!')
+                    console.error('Uh oh!')
                     return
                 }
 

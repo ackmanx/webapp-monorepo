@@ -17,7 +17,7 @@ export function submitNewCategory(name) {
             })
             .then(res => {
                 if (res.status !== 200) {
-                    console.error('Uh oh. The webtask did not work!')
+                    console.error('Uh oh!')
                     return
                 }
 
