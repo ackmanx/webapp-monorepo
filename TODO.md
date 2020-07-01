@@ -7,14 +7,3 @@
 * Document how url rewriting works
     * How do I route subdomains
     * How do I avoid needing /vocab/get-categories GET on the UI but that's the route in node
-
-
-# Performance
-
-* Ganjing Chrome test
-    * Start profile
-    * Hard refresh
-    * Search for `cat`
-    * Click `HSK` button
-    * Click `HSK` button again
-    * Stop profile
