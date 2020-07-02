@@ -1,13 +1,14 @@
 {
-    "name": "@ganjing/root",
+    "name": "webapp-monorepo",
     "version": "0.0.0",
     "private": true,
+    "type": "module",
     "scripts": {
-        "pinyin:build:prod": "npm run pinyin:clean; export APP=pinyin; export NODE_ENV=production; webpack",
-        "pinyin:build:watch": "npm run pinyin:clean; export APP=pinyin; webpack --watch",
+        "pinyin:build:prod": "yarn pinyin:clean; export APP=pinyin; export NODE_ENV=production; webpack",
+        "pinyin:build:watch": "yarn pinyin:clean; export APP=pinyin; webpack --watch",
         "pinyin:clean": "rm -rf public/pinyin",
-        "vocab:build:prod": "npm run vocab:clean; export APP=vocab; export NODE_ENV=production; webpack",
-        "vocab:build:watch": "npm run vocab:clean; export APP=vocab; webpack --watch",
+        "vocab:build:prod": "yarn vocab:clean; export APP=vocab; export NODE_ENV=production; webpack",
+        "vocab:build:watch": "yarn vocab:clean; export APP=vocab; webpack --watch",
         "vocab:clean": "rm -rf public/vocab",
         "start": "node ./bin/www"
     },
