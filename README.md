@@ -29,6 +29,8 @@ To add a new application, you need to configure a few things:
 
 When developing, always start the node server at `npm start` and then whichever FE app you want to work on.
 
+`/etc/hosts` needs to have entries for each app if working with subdomains
+* `127.0.0.1	pinyin.me.com`
 
 ## Deploying
 

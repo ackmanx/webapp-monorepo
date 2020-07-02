@@ -1,9 +1,15 @@
-const createError = require('http-errors')
-const express = require('express')
-const path = require('path')
-const cookieParser = require('cookie-parser')
-const logger = require('morgan')
-const compression = require('compression')
+import express from "express"
+import cookieParser from "cookie-parser"
+import logger from "morgan"
+import compression from "compression"
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+import pinyinRouter from '../apps/pinyin/server/routes/router.js'
+import vocabRouter from '../apps/vocab/server/routes/router.js'
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 
 const app = express()
 
@@ -36,8 +42,8 @@ app.use(function (req, res, next) {
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
-app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
-app.use('/vocab', require('../apps/vocab/server/routes/router'))
+app.use('/pinyin', pinyinRouter)
+app.use('/vocab', vocabRouter)
 
 app.get('/', function (req, res) {
     res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
@@ -53,4 +59,4 @@ app.use(function (req, res) {
     res.json({error: 404})
 })
 
-module.exports = app
+export default app
