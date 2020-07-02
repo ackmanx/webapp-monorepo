@@ -1,11 +1,13 @@
-# Heroku Controller
+# Webapp Mono-Repo
 
-# Apps
+POC for hosting my applications on a single Heroku instance that allows you to pay for one hobby dyno only
+
+## Apps
 
 This mini mono-repo contains all the applications I host on my single Heroku instance. Each folder in the `apps` directory is a separate application. They have to first be registered with `master-slave` before you can serve them.
 
 
-# Adding a New Application
+## Adding a New Application
 
 To add a new application, you need to configure a few things:
 
@@ -23,11 +25,15 @@ To add a new application, you need to configure a few things:
 1. Add a link to it in `app-selector.ejs`
 
 
-# Developing
+## Developing
 
 When developing, always start the node server at `npm start` and then whichever FE app you want to work on.
 
 
-# Deploying
+## Deploying
 
 Add instructions here on updating heroku and namecheap
+
+## Cavet
+
+One big disadvantage, and maybe deal-breaker is this limits your node applications to the same stack and library versions. Being there's a single Express server running we have to have all dependencies for the backend of all apps in this one instance. So, if node app A runs an older version of library X, then node app B may not be able to use latest versions if library X has breaking changes.
