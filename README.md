@@ -24,6 +24,8 @@ To add a new application, you need to configure a few things:
 1. Set up DNS if using a custom domain (see below)
 1. Add a link to it in `app-selector.ejs`
 
+These apps are all currently SPA and do not have their own custom server side templates
+
 
 ## Deploying
 
