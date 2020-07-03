@@ -14,20 +14,16 @@ module.exports = function () {
         ],
         output: {
             path: `${__dirname}/public/${appName}`,
-            filename: 'bundle.js'
+            filename: 'bundle.js',
         },
         optimization: {
             minimize: isProduction,
         },
         devtool: isProduction ? false : 'inline-source-map',
         resolve: {
-            extensions: ['.js', '.jsx', '.json']
+            extensions: ['.js', '.jsx', '.json'],
         },
-        plugins: [
-            new CopyWebpackPlugin([
-                {from: `${appPath}/images`},
-            ]),
-        ],
+        plugins: [new CopyWebpackPlugin([{from: `${appPath}/images`}])],
         module: {
             rules: [
                 {
@@ -36,28 +32,25 @@ module.exports = function () {
                     use: {
                         loader: 'babel-loader',
                         options: {
-                            cacheDirectory: true
-                        }
-                    }
+                            cacheDirectory: true,
+                        },
+                    },
                 },
                 {
                     test: /\.(css)$/,
                     include: appPath,
-                    use: [
-                        {loader: 'style-loader'},
-                        {loader: 'css-loader'},
-                    ]
+                    use: [{loader: 'style-loader'}, {loader: 'css-loader'}],
                 },
                 {
                     test: /\.(png|jpg|gif)$/,
                     use: [
                         {
                             loader: 'url-loader',
-                            options: {}
-                        }
-                    ]
-                }
-            ]
+                            options: {},
+                        },
+                    ],
+                },
+            ],
         },
     }
 }

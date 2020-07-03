@@ -11,7 +11,6 @@ const app = express()
 app.set('views', `${__dirname}/../src/views`)
 app.set('view engine', 'ejs')
 
-
 // ---------------------------------------------------------------------------------
 // Middleware
 // ---------------------------------------------------------------------------------
@@ -29,7 +28,6 @@ app.use(function (req, res, next) {
 
     next()
 })
-
 
 // ---------------------------------------------------------------------------------
 // Routes
@@ -60,7 +58,6 @@ app.use('/vocab', require('../apps/vocab/server/routes/router'))
 app.get('/', function (req, res) {
     res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
 })
-
 
 // ---------------------------------------------------------------------------------
 // Error handling

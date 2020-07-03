@@ -8,7 +8,7 @@ import {submitNewCategory} from '../../actions/submit-new-category'
 
 export class Sidebar extends React.Component {
     static defaultProps = {
-        categories: {}
+        categories: {},
     }
 
     constructor(props) {
@@ -29,24 +29,28 @@ export class Sidebar extends React.Component {
         return (
             <div className='sidebar'>
                 <div className='flex-container'>
-                    <div className='category-action' onClick={addNewCategoryPlaceholder}>+</div>
+                    <div className='category-action' onClick={addNewCategoryPlaceholder}>
+                        +
+                    </div>
                 </div>
                 <ul>
-                    <li className={currentCategoryId === 'ALL' ? 'current-category' : ''}
-                        onClick={() => showCategory('ALL')}>
+                    <li
+                        className={currentCategoryId === 'ALL' ? 'current-category' : ''}
+                        onClick={() => showCategory('ALL')}
+                    >
                         All Categories
                     </li>
                     {showNewCategoryPlaceholder && (
                         <li>
-                            <input autoFocus
-                                   placeholder='new category name'
-                                   onKeyDown={this.submitNewCategory}/>
+                            <input autoFocus placeholder='new category name' onKeyDown={this.submitNewCategory} />
                         </li>
                     )}
                     {Object.keys(categories).map(categoryId => (
-                        <li key={uuid()}
+                        <li
+                            key={uuid()}
                             className={currentCategoryId === categoryId ? 'current-category' : ''}
-                            onClick={() => showCategory(categoryId)}>
+                            onClick={() => showCategory(categoryId)}
+                        >
                             {categories[categoryId].name}
                         </li>
                     ))}
@@ -58,8 +62,7 @@ export class Sidebar extends React.Component {
     submitNewCategory(event) {
         if (event.key === 'Enter') {
             this.props.submitNewCategoryAction(event.target.value)
-        }
-        else if (event.key === 'Escape') {
+        } else if (event.key === 'Escape') {
             this.props.cancelNewCategory()
         }
     }

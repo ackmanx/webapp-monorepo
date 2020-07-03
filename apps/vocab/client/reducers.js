@@ -1,7 +1,15 @@
-import {cancel_new_category, get_all_entries_payload, get_categories_payload, new_category_placeholder, show_category, submit_new_category_payload, submit_new_entry_payload, update_add_entry_buffer} from './actions/action-types'
+import {
+    cancel_new_category,
+    get_all_entries_payload,
+    get_categories_payload,
+    new_category_placeholder,
+    show_category,
+    submit_new_category_payload,
+    submit_new_entry_payload,
+    update_add_entry_buffer,
+} from './actions/action-types'
 
 export function app(state = {}, action = {}) {
-
     switch (action.type) {
         case show_category:
             return {...state, currentCategoryId: action.categoryId}
@@ -12,7 +20,6 @@ export function app(state = {}, action = {}) {
 }
 
 export function buffer(state = {}, action = {}) {
-
     switch (action.type) {
         case update_add_entry_buffer:
             let isValid = false
@@ -34,7 +41,6 @@ export function buffer(state = {}, action = {}) {
 }
 
 export function categories(state = {}, action = {}) {
-
     switch (action.type) {
         case get_categories_payload:
             return {...state, data: action.categories}
@@ -54,7 +60,6 @@ export function categories(state = {}, action = {}) {
 }
 
 export function entries(state = {}, action = {}) {
-
     switch (action.type) {
         case get_all_entries_payload:
             return {...state, data: action.entries}

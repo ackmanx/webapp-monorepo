@@ -6,15 +6,14 @@ export function submitNewCategory(name) {
     return dispatch => {
         dispatch({type: submit_new_category_start})
 
-        fetch('/category',
-            {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({name: trim(name)}),
-            })
+        fetch('/category', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({name: trim(name)}),
+        })
             .then(res => {
                 if (res.status !== 200) {
                     console.error('Uh oh!')

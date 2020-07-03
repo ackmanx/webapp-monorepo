@@ -1,469 +1,469 @@
 {
-  "categories": {
-    "3b028f76-dba0-4931-a740-e8bdd5c5357f": {
-      "id": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-      "name": "Names and Places"
+    "categories": {
+        "3b028f76-dba0-4931-a740-e8bdd5c5357f": {
+            "id": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+            "name": "Names and Places"
+        },
+        "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8": {
+            "id": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
+            "name": "Grammar"
+        },
+        "86f4490e-e7f8-4f5a-8fec-887475e16f44": {
+            "id": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+            "name": "The Rest"
+        },
+        "3a82c652-4de3-425b-9526-b9f8ee81fb12": {
+            "id": "3a82c652-4de3-425b-9526-b9f8ee81fb12",
+            "name": "Measure Words"
+        },
+        "fa04a790-a7ee-4f07-a323-4af5d539a454": {
+            "id": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+            "name": "Idioms"
+        },
+        "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d": {
+            "id": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
+            "name": "Time"
+        }
     },
-    "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8": {
-      "id": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
-      "name": "Grammar"
-    },
-    "86f4490e-e7f8-4f5a-8fec-887475e16f44": {
-      "id": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-      "name": "The Rest"
-    },
-    "3a82c652-4de3-425b-9526-b9f8ee81fb12": {
-      "id": "3a82c652-4de3-425b-9526-b9f8ee81fb12",
-      "name": "Measure Words"
-    },
-    "fa04a790-a7ee-4f07-a323-4af5d539a454": {
-      "id": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-      "name": "Idioms"
-    },
-    "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d": {
-      "id": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
-      "name": "Time"
+    "entries": {
+        "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8": [
+            {
+                "id": "e3503a33-1e55-424c-864e-49df911d6fd5",
+                "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
+                "hanzi": "吧",
+                "pinyin": "ba",
+                "english": "(particle denoting a suggestion)"
+            },
+            {
+                "id": "8e8ac2ad-52f2-4a28-a80b-8b6265c45f7c",
+                "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
+                "hanzi": "把",
+                "pinyin": "ba3",
+                "english": "(particle marking the following noun as a direct object. something must come after the object)"
+            },
+            {
+                "id": "a8de361b-1c1d-426a-b7e3-24059d397e62",
+                "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
+                "hanzi": "才",
+                "pinyin": "cai2",
+                "english": "(after a clause and the start of a new clause) then [emphasis on the previous clause giving reason for the next clause]"
+            },
+            {
+                "id": "3b498c64-5f9c-4c6f-a978-18dbf030f06a",
+                "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
+                "hanzi": "才",
+                "pinyin": "cai2",
+                "english": "(when before a clause of condition or reason) not until"
+            }
+        ],
+        "3b028f76-dba0-4931-a740-e8bdd5c5357f": [
+            {
+                "id": "2cdee25e-8e36-47f0-8be3-c290fea996fe",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "明州",
+                "pinyin": "ming2 zhou1",
+                "english": "Minnesota"
+            },
+            {
+                "id": "2108852d-ff9a-4615-87f4-e565cd458a53",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "柯林",
+                "pinyin": "ke1 lin2",
+                "english": "Kevin (boy's name)"
+            },
+            {
+                "id": "1808a312-f8fb-4e1e-be47-a471b759220e",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "林雪梅",
+                "pinyin": "lin2 xue3mei2",
+                "english": "Girl's name (Integrated Chinese textbook only)"
+            },
+            {
+                "id": "3476b6b7-fb7f-42b7-b6b1-23cabe9b68cc",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "白英爱",
+                "pinyin": "bai2 ying1 ai4",
+                "english": "Girl's name (Integrated Chinese textbook only)"
+            },
+            {
+                "id": "638e1dfe-5582-4dc3-81a9-9a38afa7393b",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "丽莎",
+                "pinyin": "li4 sha1",
+                "english": "Lisa (girl's name)"
+            },
+            {
+                "id": "1f281843-e3a4-4a22-9be7-4dcf63bee587",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "万圣节",
+                "pinyin": "wan4 sheng4 jie2",
+                "english": "Halloween"
+            },
+            {
+                "id": "451fa299-439a-4a9f-b138-085c9d6a5b59",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "无聊",
+                "pinyin": "wu2 liao2",
+                "english": "boring"
+            },
+            {
+                "id": "2231ca47-66b1-4513-a1cc-2e0782c422fe",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "云南",
+                "pinyin": "yun2 nan2",
+                "english": "Yunnan"
+            },
+            {
+                "id": "0fb3820a-2de4-46c1-9955-bc5ae2ef3511",
+                "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
+                "hanzi": "生词",
+                "pinyin": "sheng1 ci2",
+                "english": "vocab"
+            }
+        ],
+        "86f4490e-e7f8-4f5a-8fec-887475e16f44": [
+            {
+                "id": "ecc3e519-c433-4077-bbc0-8076dd5d7686",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "花",
+                "pinyin": "hua1",
+                "english": "to spend (money, time)"
+            },
+            {
+                "id": "812292cd-3b03-444d-a8c0-bcff16c490ad",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "出生",
+                "pinyin": "chu1 sheng1",
+                "english": "birthplace"
+            },
+            {
+                "id": "7f26e6cf-ded0-4cc9-8460-dedb752f901d",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "生词",
+                "pinyin": "sheng1 ci2",
+                "english": "new vocab, new words"
+            },
+            {
+                "id": "29a30468-c343-4133-8841-5c52feb94f8a",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "新生",
+                "pinyin": "xin1 sheng1",
+                "english": "newborn, new student"
+            },
+            {
+                "id": "77d96622-4927-4210-81b8-fb93925819ce",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "一直",
+                "pinyin": "yi1 zhi2",
+                "english": "continuously"
+            },
+            {
+                "id": "3c9cd2e7-712c-460c-bb4e-6e05717fad37",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "网上",
+                "pinyin": "wang3 shang4",
+                "english": "online; 在网上 on the internet"
+            },
+            {
+                "id": "91360a13-3972-4d46-8f77-7031f395186e",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "查",
+                "pinyin": "cha2",
+                "english": "check; look up; examine"
+            },
+            {
+                "id": "7f3b9ba8-b3ef-4dae-a9ee-e9451dd74e4b",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "网站",
+                "pinyin": "wang3 zhan4",
+                "english": "website"
+            },
+            {
+                "id": "4fff831f-7528-4b9e-947e-29f6927a3328",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "汽车",
+                "pinyin": "qi4 che1",
+                "english": "car; bus; 辆 mw"
+            },
+            {
+                "id": "a44f3351-1e38-4056-a2a9-741ed51d407c",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "公共汽车",
+                "pinyin": "gong1 gong4 qi4 che1",
+                "english": "bus; 辆 mw"
+            },
+            {
+                "id": "cbda5d65-f3a7-4764-b831-054c7ded6d65",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "电脑",
+                "pinyin": "dian4 nao3",
+                "english": "computer"
+            },
+            {
+                "id": "5cfd1908-19e6-41d9-b6c2-4c91c33c8047",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "离不开",
+                "pinyin": "li2 bu kai1",
+                "english": "unable to be separated; inseparable; opposite of 离得开"
+            },
+            {
+                "id": "465f2f0d-7b52-423a-8ed7-f836d17fe0a9",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "跟着",
+                "pinyin": "gen1 zhe",
+                "english": "to follow (someone, something)"
+            },
+            {
+                "id": "1e6cd8b3-8351-4916-902c-b13da3d4ae08",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "受伤",
+                "pinyin": "shou4 shang1",
+                "english": "to get hurt"
+            },
+            {
+                "id": "8dd12c9a-0274-48c8-9f15-690e941a7fca",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "直",
+                "pinyin": "zhi2",
+                "english": "straight; to straighten"
+            },
+            {
+                "id": "83556899-ca0f-4666-8172-bd5fb85bf881",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "闻",
+                "pinyin": "wen2",
+                "english": "to smell"
+            },
+            {
+                "id": "bdd4396a-2610-4aa4-bf51-c91b9f28cddd",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "莫",
+                "pinyin": "mo1",
+                "english": "to feel; to touch"
+            },
+            {
+                "id": "60286759-6ee3-4bad-a8fa-c8700001d15d",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "常识",
+                "pinyin": "chang2 shi4",
+                "english": "common sense"
+            },
+            {
+                "id": "c7acc0db-206a-4726-8db8-21b32a4e97e4",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "知识",
+                "pinyin": "zhi1 shi4",
+                "english": "knowledge"
+            },
+            {
+                "id": "2c6ab942-4cef-4f9d-8714-7520e076d87b",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "努力",
+                "pinyin": "nu3 li4",
+                "english": "hardworking"
+            },
+            {
+                "id": "6bed7693-839a-4390-862f-530aa0080748",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "室内",
+                "pinyin": "shi4 nei4",
+                "english": "indoors"
+            },
+            {
+                "id": "f91eab16-2f27-46f3-b773-38aa1631687e",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "室外",
+                "pinyin": "shi4 wai4",
+                "english": "outdoors"
+            },
+            {
+                "id": "259fca5e-f5a7-4cab-a888-58d777f734f8",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "正式",
+                "pinyin": "zheng4 shi4",
+                "english": "formal"
+            },
+            {
+                "id": "0aad2311-8372-4fe4-a082-b0d9f3ac69f8",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "设计",
+                "pinyin": "she4 ji4",
+                "english": "design"
+            },
+            {
+                "id": "f01db3d0-3242-4318-9d44-a05c328d5b52",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "节日",
+                "pinyin": "jie2 ri4",
+                "english": "holiday, festival"
+            },
+            {
+                "id": "faab89cc-a2ba-4798-9d35-6c5940855093",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "目标",
+                "pinyin": "mu4 biao1",
+                "english": "objective, target, goal"
+            },
+            {
+                "id": "b1ecd9a7-0cc0-4366-a736-6374c8b7c3b3",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "教室",
+                "pinyin": "jiao4 shi4",
+                "english": "classroom"
+            },
+            {
+                "id": "704aedbf-2d15-45c7-aa5a-02fa1fabaef6",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "觉得",
+                "pinyin": "jue2 de",
+                "english": "to think, the feel"
+            },
+            {
+                "id": "2da4e2f1-73a9-4c58-8957-a7acb50b25d5",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "生活",
+                "pinyin": "sheng1 huo2",
+                "english": "life, livelihood"
+            },
+            {
+                "id": "fbee3f63-4466-4651-ba49-36ac482bdb15",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "字",
+                "pinyin": "zi4",
+                "english": "letter, character, symbol, word"
+            },
+            {
+                "id": "bea6aec9-581d-4e6f-ba10-a52e20bcb4ec",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "子",
+                "pinyin": "zi",
+                "english": "(noun suffix), but what does it do exactly?"
+            },
+            {
+                "id": "a7e07478-6c6a-4f40-b8fa-60b702ef8569",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "接",
+                "pinyin": "jie1",
+                "english": "to pick up, to welcome, to meet"
+            },
+            {
+                "id": "ffdf6446-c8a4-4a91-a151-c55944b4c48b",
+                "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
+                "hanzi": "快件",
+                "pinyin": "kuai4 jian4",
+                "english": "package (noun)"
+            }
+        ],
+        "3a82c652-4de3-425b-9526-b9f8ee81fb12": [
+            {
+                "id": "5e048bfb-78fd-487c-88a4-e671e2009417",
+                "categoryId": "3a82c652-4de3-425b-9526-b9f8ee81fb12",
+                "hanzi": "辆",
+                "pinyin": "liang4",
+                "english": "mw for cars, motorcycles, bicycles, mopeds"
+            }
+        ],
+        "fa04a790-a7ee-4f07-a323-4af5d539a454": [
+            {
+                "id": "0bc31da8-4f26-4003-b2c2-6f4d44152ba3",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "一会儿都",
+                "pinyin": "yi1 hui4er dou1",
+                "english": "not for one moment"
+            },
+            {
+                "id": "8c4e9a5e-f9f4-448f-a4a1-4d9d1a694788",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "一点都",
+                "pinyin": "yi4 dian3 dou1",
+                "english": "not in the least"
+            },
+            {
+                "id": "974983e8-d739-4c2f-8d4e-88047273d24e",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "一个都",
+                "pinyin": "yi4 ge dou1",
+                "english": "not a single one"
+            },
+            {
+                "id": "1b6e6503-4f35-40e1-9418-e7ff7204eb38",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "等会儿见",
+                "pinyin": "deng3 hui4er jian4",
+                "english": "see you then"
+            },
+            {
+                "id": "61f13161-2c22-420a-9b11-2f11a717609e",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "不太会V",
+                "pinyin": "bu2 tai4 hui4 <verb>",
+                "english": "not very good at <verb>; 她不太会跑 She's not very good at running"
+            },
+            {
+                "id": "81a3f266-eca6-4087-921d-d8dcc720e7fa",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "看起来",
+                "pinyin": "kan4 qi3 lai",
+                "english": "looks like"
+            },
+            {
+                "id": "63bbd35e-13a5-41eb-8828-3e5eac774ac4",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "听起来",
+                "pinyin": "ting1 qi3 lai",
+                "english": "sounds like"
+            },
+            {
+                "id": "c2aeab98-2380-4995-a9e6-4700d73c5399",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "摸起来",
+                "pinyin": "mo1 qi3 lai",
+                "english": "feels likes"
+            },
+            {
+                "id": "e7f38b53-9b51-45c3-a372-a9e85daea9cb",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "闻起来",
+                "pinyin": "wen2 qi3 lai",
+                "english": "smells like"
+            },
+            {
+                "id": "103e3590-5368-409d-87f0-f7b85d679bb7",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "没想到",
+                "pinyin": "mei2 xiang3 dao4",
+                "english": "didn't expect"
+            },
+            {
+                "id": "dc18ff85-7fa1-409e-b56d-e0fdc9cb869a",
+                "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
+                "hanzi": "不好意思",
+                "pinyin": "bu4 hao3 yi4 si",
+                "english": "I'm sorry"
+            }
+        ],
+        "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d": [
+            {
+                "id": "a17ace39-fc37-469f-91a9-df14e09e0666",
+                "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
+                "hanzi": "白天",
+                "pinyin": "bai2 tian1",
+                "english": "daytime"
+            },
+            {
+                "id": "07c11fb5-5952-4a54-a810-892834a9f85d",
+                "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
+                "hanzi": "整天",
+                "pinyin": "zheng3 tian1",
+                "english": "all day"
+            },
+            {
+                "id": "87f06fe5-4d23-4572-8095-4088a8622c84",
+                "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
+                "hanzi": "去年",
+                "pinyin": "qu4 nian2",
+                "english": "last year"
+            }
+        ]
     }
-  },
-  "entries": {
-    "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8": [
-      {
-        "id": "e3503a33-1e55-424c-864e-49df911d6fd5",
-        "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
-        "hanzi": "吧",
-        "pinyin": "ba",
-        "english": "(particle denoting a suggestion)"
-      },
-      {
-        "id": "8e8ac2ad-52f2-4a28-a80b-8b6265c45f7c",
-        "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
-        "hanzi": "把",
-        "pinyin": "ba3",
-        "english": "(particle marking the following noun as a direct object. something must come after the object)"
-      },
-      {
-        "id": "a8de361b-1c1d-426a-b7e3-24059d397e62",
-        "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
-        "hanzi": "才",
-        "pinyin": "cai2",
-        "english": "(after a clause and the start of a new clause) then [emphasis on the previous clause giving reason for the next clause]"
-      },
-      {
-        "id": "3b498c64-5f9c-4c6f-a978-18dbf030f06a",
-        "categoryId": "be8d29c1-3ff9-47a2-9f25-79e00b4cd7d8",
-        "hanzi": "才",
-        "pinyin": "cai2",
-        "english": "(when before a clause of condition or reason) not until"
-      }
-    ],
-    "3b028f76-dba0-4931-a740-e8bdd5c5357f": [
-      {
-        "id": "2cdee25e-8e36-47f0-8be3-c290fea996fe",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "明州",
-        "pinyin": "ming2 zhou1",
-        "english": "Minnesota"
-      },
-      {
-        "id": "2108852d-ff9a-4615-87f4-e565cd458a53",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "柯林",
-        "pinyin": "ke1 lin2",
-        "english": "Kevin (boy's name)"
-      },
-      {
-        "id": "1808a312-f8fb-4e1e-be47-a471b759220e",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "林雪梅",
-        "pinyin": "lin2 xue3mei2",
-        "english": "Girl's name (Integrated Chinese textbook only)"
-      },
-      {
-        "id": "3476b6b7-fb7f-42b7-b6b1-23cabe9b68cc",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "白英爱",
-        "pinyin": "bai2 ying1 ai4",
-        "english": "Girl's name (Integrated Chinese textbook only)"
-      },
-      {
-        "id": "638e1dfe-5582-4dc3-81a9-9a38afa7393b",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "丽莎",
-        "pinyin": "li4 sha1",
-        "english": "Lisa (girl's name)"
-      },
-      {
-        "id": "1f281843-e3a4-4a22-9be7-4dcf63bee587",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "万圣节",
-        "pinyin": "wan4 sheng4 jie2",
-        "english": "Halloween"
-      },
-      {
-        "id": "451fa299-439a-4a9f-b138-085c9d6a5b59",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "无聊",
-        "pinyin": "wu2 liao2",
-        "english": "boring"
-      },
-      {
-        "id": "2231ca47-66b1-4513-a1cc-2e0782c422fe",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "云南",
-        "pinyin": "yun2 nan2",
-        "english": "Yunnan"
-      },
-      {
-        "id": "0fb3820a-2de4-46c1-9955-bc5ae2ef3511",
-        "categoryId": "3b028f76-dba0-4931-a740-e8bdd5c5357f",
-        "hanzi": "生词",
-        "pinyin": "sheng1 ci2",
-        "english": "vocab"
-      }
-    ],
-    "86f4490e-e7f8-4f5a-8fec-887475e16f44": [
-      {
-        "id": "ecc3e519-c433-4077-bbc0-8076dd5d7686",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "花",
-        "pinyin": "hua1",
-        "english": "to spend (money, time)"
-      },
-      {
-        "id": "812292cd-3b03-444d-a8c0-bcff16c490ad",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "出生",
-        "pinyin": "chu1 sheng1",
-        "english": "birthplace"
-      },
-      {
-        "id": "7f26e6cf-ded0-4cc9-8460-dedb752f901d",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "生词",
-        "pinyin": "sheng1 ci2",
-        "english": "new vocab, new words"
-      },
-      {
-        "id": "29a30468-c343-4133-8841-5c52feb94f8a",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "新生",
-        "pinyin": "xin1 sheng1",
-        "english": "newborn, new student"
-      },
-      {
-        "id": "77d96622-4927-4210-81b8-fb93925819ce",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "一直",
-        "pinyin": "yi1 zhi2",
-        "english": "continuously"
-      },
-      {
-        "id": "3c9cd2e7-712c-460c-bb4e-6e05717fad37",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "网上",
-        "pinyin": "wang3 shang4",
-        "english": "online; 在网上 on the internet"
-      },
-      {
-        "id": "91360a13-3972-4d46-8f77-7031f395186e",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "查",
-        "pinyin": "cha2",
-        "english": "check; look up; examine"
-      },
-      {
-        "id": "7f3b9ba8-b3ef-4dae-a9ee-e9451dd74e4b",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "网站",
-        "pinyin": "wang3 zhan4",
-        "english": "website"
-      },
-      {
-        "id": "4fff831f-7528-4b9e-947e-29f6927a3328",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "汽车",
-        "pinyin": "qi4 che1",
-        "english": "car; bus; 辆 mw"
-      },
-      {
-        "id": "a44f3351-1e38-4056-a2a9-741ed51d407c",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "公共汽车",
-        "pinyin": "gong1 gong4 qi4 che1",
-        "english": "bus; 辆 mw"
-      },
-      {
-        "id": "cbda5d65-f3a7-4764-b831-054c7ded6d65",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "电脑",
-        "pinyin": "dian4 nao3",
-        "english": "computer"
-      },
-      {
-        "id": "5cfd1908-19e6-41d9-b6c2-4c91c33c8047",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "离不开",
-        "pinyin": "li2 bu kai1",
-        "english": "unable to be separated; inseparable; opposite of 离得开"
-      },
-      {
-        "id": "465f2f0d-7b52-423a-8ed7-f836d17fe0a9",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "跟着",
-        "pinyin": "gen1 zhe",
-        "english": "to follow (someone, something)"
-      },
-      {
-        "id": "1e6cd8b3-8351-4916-902c-b13da3d4ae08",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "受伤",
-        "pinyin": "shou4 shang1",
-        "english": "to get hurt"
-      },
-      {
-        "id": "8dd12c9a-0274-48c8-9f15-690e941a7fca",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "直",
-        "pinyin": "zhi2",
-        "english": "straight; to straighten"
-      },
-      {
-        "id": "83556899-ca0f-4666-8172-bd5fb85bf881",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "闻",
-        "pinyin": "wen2",
-        "english": "to smell"
-      },
-      {
-        "id": "bdd4396a-2610-4aa4-bf51-c91b9f28cddd",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "莫",
-        "pinyin": "mo1",
-        "english": "to feel; to touch"
-      },
-      {
-        "id": "60286759-6ee3-4bad-a8fa-c8700001d15d",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "常识",
-        "pinyin": "chang2 shi4",
-        "english": "common sense"
-      },
-      {
-        "id": "c7acc0db-206a-4726-8db8-21b32a4e97e4",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "知识",
-        "pinyin": "zhi1 shi4",
-        "english": "knowledge"
-      },
-      {
-        "id": "2c6ab942-4cef-4f9d-8714-7520e076d87b",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "努力",
-        "pinyin": "nu3 li4",
-        "english": "hardworking"
-      },
-      {
-        "id": "6bed7693-839a-4390-862f-530aa0080748",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "室内",
-        "pinyin": "shi4 nei4",
-        "english": "indoors"
-      },
-      {
-        "id": "f91eab16-2f27-46f3-b773-38aa1631687e",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "室外",
-        "pinyin": "shi4 wai4",
-        "english": "outdoors"
-      },
-      {
-        "id": "259fca5e-f5a7-4cab-a888-58d777f734f8",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "正式",
-        "pinyin": "zheng4 shi4",
-        "english": "formal"
-      },
-      {
-        "id": "0aad2311-8372-4fe4-a082-b0d9f3ac69f8",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "设计",
-        "pinyin": "she4 ji4",
-        "english": "design"
-      },
-      {
-        "id": "f01db3d0-3242-4318-9d44-a05c328d5b52",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "节日",
-        "pinyin": "jie2 ri4",
-        "english": "holiday, festival"
-      },
-      {
-        "id": "faab89cc-a2ba-4798-9d35-6c5940855093",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "目标",
-        "pinyin": "mu4 biao1",
-        "english": "objective, target, goal"
-      },
-      {
-        "id": "b1ecd9a7-0cc0-4366-a736-6374c8b7c3b3",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "教室",
-        "pinyin": "jiao4 shi4",
-        "english": "classroom"
-      },
-      {
-        "id": "704aedbf-2d15-45c7-aa5a-02fa1fabaef6",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "觉得",
-        "pinyin": "jue2 de",
-        "english": "to think, the feel"
-      },
-      {
-        "id": "2da4e2f1-73a9-4c58-8957-a7acb50b25d5",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "生活",
-        "pinyin": "sheng1 huo2",
-        "english": "life, livelihood"
-      },
-      {
-        "id": "fbee3f63-4466-4651-ba49-36ac482bdb15",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "字",
-        "pinyin": "zi4",
-        "english": "letter, character, symbol, word"
-      },
-      {
-        "id": "bea6aec9-581d-4e6f-ba10-a52e20bcb4ec",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "子",
-        "pinyin": "zi",
-        "english": "(noun suffix), but what does it do exactly?"
-      },
-      {
-        "id": "a7e07478-6c6a-4f40-b8fa-60b702ef8569",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "接",
-        "pinyin": "jie1",
-        "english": "to pick up, to welcome, to meet"
-      },
-      {
-        "id": "ffdf6446-c8a4-4a91-a151-c55944b4c48b",
-        "categoryId": "86f4490e-e7f8-4f5a-8fec-887475e16f44",
-        "hanzi": "快件",
-        "pinyin": "kuai4 jian4",
-        "english": "package (noun)"
-      }
-    ],
-    "3a82c652-4de3-425b-9526-b9f8ee81fb12": [
-      {
-        "id": "5e048bfb-78fd-487c-88a4-e671e2009417",
-        "categoryId": "3a82c652-4de3-425b-9526-b9f8ee81fb12",
-        "hanzi": "辆",
-        "pinyin": "liang4",
-        "english": "mw for cars, motorcycles, bicycles, mopeds"
-      }
-    ],
-    "fa04a790-a7ee-4f07-a323-4af5d539a454": [
-      {
-        "id": "0bc31da8-4f26-4003-b2c2-6f4d44152ba3",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "一会儿都",
-        "pinyin": "yi1 hui4er dou1",
-        "english": "not for one moment"
-      },
-      {
-        "id": "8c4e9a5e-f9f4-448f-a4a1-4d9d1a694788",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "一点都",
-        "pinyin": "yi4 dian3 dou1",
-        "english": "not in the least"
-      },
-      {
-        "id": "974983e8-d739-4c2f-8d4e-88047273d24e",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "一个都",
-        "pinyin": "yi4 ge dou1",
-        "english": "not a single one"
-      },
-      {
-        "id": "1b6e6503-4f35-40e1-9418-e7ff7204eb38",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "等会儿见",
-        "pinyin": "deng3 hui4er jian4",
-        "english": "see you then"
-      },
-      {
-        "id": "61f13161-2c22-420a-9b11-2f11a717609e",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "不太会V",
-        "pinyin": "bu2 tai4 hui4 <verb>",
-        "english": "not very good at <verb>; 她不太会跑 She's not very good at running"
-      },
-      {
-        "id": "81a3f266-eca6-4087-921d-d8dcc720e7fa",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "看起来",
-        "pinyin": "kan4 qi3 lai",
-        "english": "looks like"
-      },
-      {
-        "id": "63bbd35e-13a5-41eb-8828-3e5eac774ac4",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "听起来",
-        "pinyin": "ting1 qi3 lai",
-        "english": "sounds like"
-      },
-      {
-        "id": "c2aeab98-2380-4995-a9e6-4700d73c5399",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "摸起来",
-        "pinyin": "mo1 qi3 lai",
-        "english": "feels likes"
-      },
-      {
-        "id": "e7f38b53-9b51-45c3-a372-a9e85daea9cb",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "闻起来",
-        "pinyin": "wen2 qi3 lai",
-        "english": "smells like"
-      },
-      {
-        "id": "103e3590-5368-409d-87f0-f7b85d679bb7",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "没想到",
-        "pinyin": "mei2 xiang3 dao4",
-        "english": "didn't expect"
-      },
-      {
-        "id": "dc18ff85-7fa1-409e-b56d-e0fdc9cb869a",
-        "categoryId": "fa04a790-a7ee-4f07-a323-4af5d539a454",
-        "hanzi": "不好意思",
-        "pinyin": "bu4 hao3 yi4 si",
-        "english": "I'm sorry"
-      }
-    ],
-    "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d": [
-      {
-        "id": "a17ace39-fc37-469f-91a9-df14e09e0666",
-        "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
-        "hanzi": "白天",
-        "pinyin": "bai2 tian1",
-        "english": "daytime"
-      },
-      {
-        "id": "07c11fb5-5952-4a54-a810-892834a9f85d",
-        "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
-        "hanzi": "整天",
-        "pinyin": "zheng3 tian1",
-        "english": "all day"
-      },
-      {
-        "id": "87f06fe5-4d23-4572-8095-4088a8622c84",
-        "categoryId": "b1dc0bd1-2af7-4867-8bf5-76f3e72f0e2d",
-        "hanzi": "去年",
-        "pinyin": "qu4 nian2",
-        "english": "last year"
-      }
-    ]
-  }
 }

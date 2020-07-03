@@ -3,7 +3,6 @@ import React, {useEffect, useRef} from 'react'
 import {convertToneNumbersToAccents} from './utils/convert-accents'
 
 export const App = () => {
-
     const textareaEl = useRef(null)
 
     useEffect(() => {
@@ -19,7 +18,5 @@ export const App = () => {
         localStorage.setItem('text', textarea.value)
     }
 
-    return (
-        <textarea ref={textareaEl} onKeyUp={handleKeyUp}/>
-    )
+    return <textarea ref={textareaEl} onKeyUp={handleKeyUp} />
 }

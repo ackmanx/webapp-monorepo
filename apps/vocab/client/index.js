@@ -17,7 +17,7 @@ const initialState = {
         hanzi: '',
         pinyin: '',
         english: '',
-    }
+    },
 }
 
 const store = createStore(
@@ -28,9 +28,7 @@ const store = createStore(
         entries,
     }),
     initialState,
-    composeWithDevTools(
-        applyMiddleware(thunk),
-    )
+    composeWithDevTools(applyMiddleware(thunk))
 )
 
 ReactDOM.render(
@@ -38,11 +36,11 @@ ReactDOM.render(
         <div className='useless-div-because-redux-provider-requires-one-child'>
             <Mobile>
                 <div className='small-view'>
-                    <App isLargeView={false}/>
+                    <App isLargeView={false} />
                 </div>
             </Mobile>
             <Desktop>
-                <App isLargeView={true}/>
+                <App isLargeView={true} />
             </Desktop>
         </div>
     </Provider>,

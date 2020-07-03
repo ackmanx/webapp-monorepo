@@ -10,7 +10,7 @@ import {deleteEntry} from '../../actions/delete-entry'
 
 export class Entries extends React.Component {
     static defaultProps = {
-        entries: {}
+        entries: {},
     }
 
     state = {
@@ -36,7 +36,7 @@ export class Entries extends React.Component {
 
         return (
             <div className='entries-panel'>
-                {currentCategoryId !== 'ALL' && <ConnectedAddNewEntry/>}
+                {currentCategoryId !== 'ALL' && <ConnectedAddNewEntry />}
                 {entriesToShow.map(entry => {
                     const showMenuForEntry = this.state.showMenu && this.state.menuId === entry.id
                     return (
@@ -45,8 +45,12 @@ export class Entries extends React.Component {
                                 {!showMenuForEntry && <button onClick={() => this.toggleMenu(entry.id)}>...</button>}
                                 {showMenuForEntry && (
                                     <div>
-                                        <img src={editIcon} alt='edit' onClick={this.toggleMenu}/>
-                                        <img src={deleteIcon} alt='delete' onClick={() => deleteEntryAction(entry.id, entry.categoryId)}/>
+                                        <img src={editIcon} alt='edit' onClick={this.toggleMenu} />
+                                        <img
+                                            src={deleteIcon}
+                                            alt='delete'
+                                            onClick={() => deleteEntryAction(entry.id, entry.categoryId)}
+                                        />
                                     </div>
                                 )}
                             </div>

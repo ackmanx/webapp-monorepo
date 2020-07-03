@@ -2,7 +2,7 @@ import {getAllEntries} from './get-all-entries'
 import {delete_entry_payload, delete_entry_start, delete_entry_stop} from './action-types'
 
 export function deleteEntry(entryId, categoryId) {
-    return (dispatch) => {
+    return dispatch => {
         dispatch({type: delete_entry_start})
 
         const body = {
@@ -10,15 +10,14 @@ export function deleteEntry(entryId, categoryId) {
             categoryId,
         }
 
-        fetch('/entry',
-            {
-                method: 'DELETE',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(body),
-            })
+        fetch('/entry', {
+            method: 'DELETE',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        })
             .then(res => {
                 if (res.status !== 200) {
                     console.error('Uh oh!')

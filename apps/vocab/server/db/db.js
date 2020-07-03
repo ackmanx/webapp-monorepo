@@ -8,14 +8,12 @@ const SLICES = {
     entries: 'entries',
 }
 
-db
-    .defaults({
-        categories: {},
-        entries: {},
-    })
-    .write()
+db.defaults({
+    categories: {},
+    entries: {},
+}).write()
 
 exports.getCategories = () => db.get(SLICES.categories).value()
-exports.saveCategories = (categories) => db.set(SLICES.categories, categories).write()
+exports.saveCategories = categories => db.set(SLICES.categories, categories).write()
 exports.getEntries = () => db.get(SLICES.entries).value()
-exports.saveEntries = (entries) => db.set(SLICES.entries, entries).write()
+exports.saveEntries = entries => db.set(SLICES.entries, entries).write()

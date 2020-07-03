@@ -1,5 +1,4 @@
 export const convertToneNumbersToAccents = pinyin => {
-
     const common = {
         a1: 'ā',
         a2: 'á',
@@ -91,7 +90,7 @@ export const convertToneNumbersToAccents = pinyin => {
         un2: 'ún',
         un3: 'ǔn',
         un4: 'ùn',
-        un5: 'un'
+        un5: 'un',
     }
 
     const uncommon = {
@@ -126,7 +125,7 @@ export const convertToneNumbersToAccents = pinyin => {
         'u:2': 'ǘ',
         'u:3': 'ǚ',
         'u:4': 'ǜ',
-        'u:5': 'ü'
+        'u:5': 'ü',
     }
 
     for (const key in common) {

@@ -5,7 +5,6 @@ import {submitNewEntry} from '../../actions/submit-new-entry'
 import {update_add_entry_buffer} from '../../actions/action-types'
 
 export class AddNewEntry extends React.Component {
-
     constructor(props) {
         super(props)
         this.updateValue = this.updateValue.bind(this)
@@ -20,19 +19,21 @@ export class AddNewEntry extends React.Component {
                 <div className='inputs'>
                     <div className='group'>
                         <label>hanzi</label>
-                        <input type='text' value={hanzi} onChange={event => this.updateValue(event, 'hanzi')}/>
+                        <input type='text' value={hanzi} onChange={event => this.updateValue(event, 'hanzi')} />
                     </div>
                     <div className='group'>
                         <label>pinyin</label>
-                        <input type='text' value={pinyin} onChange={event => this.updateValue(event, 'pinyin')}/>
+                        <input type='text' value={pinyin} onChange={event => this.updateValue(event, 'pinyin')} />
                     </div>
                     <div className='group'>
                         <label>english</label>
-                        <input type='text' value={english} onChange={event => this.updateValue(event, 'english')}/>
+                        <input type='text' value={english} onChange={event => this.updateValue(event, 'english')} />
                     </div>
                 </div>
                 <div className='submit'>
-                    <button disabled={!isValid} onClick={this.validateAndSubmit}>Add</button>
+                    <button disabled={!isValid} onClick={this.validateAndSubmit}>
+                        Add
+                    </button>
                 </div>
             </form>
         )

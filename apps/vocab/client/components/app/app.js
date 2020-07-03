@@ -7,8 +7,8 @@ export class App extends React.Component {
     render() {
         return (
             <div className='app'>
-                <ConnectedSidebar/>
-                <ConnectedEntries/>
+                <ConnectedSidebar />
+                <ConnectedEntries />
             </div>
         )
     }

@@ -14,15 +14,14 @@ export function submitNewEntry() {
             english: trim(state.buffer.english),
         }
 
-        fetch('/entry',
-            {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(body),
-            })
+        fetch('/entry', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(body),
+        })
             .then(res => {
                 if (res.status !== 200) {
                     console.error('Uh oh!')
