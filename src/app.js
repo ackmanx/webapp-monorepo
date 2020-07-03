@@ -36,6 +36,8 @@ app.use(compression())
 // Routes
 // ---------------------------------------------------------------------------------
 app.use(function (req, res, next) {
+    log('hostname:', req.hostname)
+
     if (req.hostname === 'ialreadydidthat.com') {
         req.url = `/pinyin/${req.path}`
     }
