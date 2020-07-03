@@ -1,67 +1,68 @@
-import express from "express";
-import {v4} from "uuid";
-import {getCategories, saveCategories, getEntries, saveEntries} from "../db/db.js";
-
+const express = require('express')
 const router = express.Router()
+const uuidv4 = require('uuid')
+
+const db = require('../db/db')
+
 router.get('/', function (req, res) {
     res.render('index', {title: '干净 Vocab', appName: 'vocab'})
 })
 
 router.get('/category', function (req, res) {
-    res.json(getCategories())
+    res.json(db.getCategories())
 })
 
 router.post('/category', function (req, res) {
-    const categories = getCategories()
+    const categories = db.getCategories()
 
-    const newId = v4()
+    const newId = uuidv4()
 
     categories[newId] = {
         id: newId,
         name: req.body.name,
     }
 
-    saveCategories(categories)
+    db.saveCategories(categories)
 
     res.json({message: 'Saved!'})
 })
 
 router.delete('/category', function (req, res) {
-    const categories = getCategories()
+    const categories = db.getCategories()
 
     categories[req.body.categoryId] = undefined
 
-    saveCategories(categories)
+    db.saveCategories(categories)
 
     res.json({message: 'Deleted!'})
 })
 
 router.get('/entry', function (req, res) {
-    res.json(getEntries())
+    res.json(db.getEntries())
 })
 
 router.post('/entry', function (req, res) {
-    const entries = getEntries()
+    const entries = db.getEntries()
 
     if (!entries[req.body.categoryId]) {
         entries[req.body.categoryId] = []
     }
 
     entries[req.body.categoryId].push({
-        id: v4(),
+        id: uuidv4(),
         categoryId: req.body.categoryId,
         hanzi: req.body.hanzi,
         pinyin: req.body.pinyin,
         english: req.body.english,
     })
 
-    saveEntries(entries)
+    db.saveEntries(entries)
 
     res.json({message: 'Saved!'})
 })
 
 router.delete('/entry', function (req, res) {
-    const entries = getEntries()
+    const entries = db.getEntries()
 
     const categoryToDeleteFrom = req.body.categoryId
     const entryIdToDelete = req.body.entryId
@@ -69,11 +70,9 @@ router.delete('/entry', function (req, res) {
     const entryToDeleteIndex = entries[categoryToDeleteFrom].findIndex(entry => entry.id === entryIdToDelete)
     const deleted = entries[categoryToDeleteFrom].splice(entryToDeleteIndex, 1)
 
-    saveEntries(entries)
+    db.saveEntries(entries)
 
     res.json({message: 'Deleted!', deleted})
 })
 
-
-
-export default router
+module.exports = router

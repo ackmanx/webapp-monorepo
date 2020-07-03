@@ -1,18 +1,9 @@
-import express from "express"
-import cookieParser from "cookie-parser"
-import logger from "morgan"
-import compression from "compression"
-import {dirname} from 'path';
-import {fileURLToPath} from 'url';
-import debug from "debug"
+const express = require('express')
+const cookieParser = require('cookie-parser')
+const logger = require('morgan')
+const compression = require('compression')
 
-import pinyinRouter from '../apps/pinyin/server/routes/router.js'
-import vocabRouter from '../apps/vocab/server/routes/router.js'
-
-const log = debug('mr:app')
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express()
-
 
 // ---------------------------------------------------------------------------------
 // Engine setup
@@ -30,6 +21,14 @@ app.use(express.urlencoded({extended: false}))
 app.use(cookieParser())
 app.use(express.static(`${__dirname}/../public`))
 app.use(compression())
+
+app.use(function (req, res, next) {
+    if (req.subdomains.length) {
+        req.url = `/${req.subdomains[0]}/${req.path}`
+    }
+
+    next()
+})
 
 
 // ---------------------------------------------------------------------------------
@@ -55,8 +54,8 @@ app.use(function (req, res, next) {
     next()
 })
 
-app.use('/pinyin', pinyinRouter)
-app.use('/vocab', vocabRouter)
+app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
+app.use('/vocab', require('../apps/vocab/server/routes/router'))
 
 app.get('/', function (req, res) {
     res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
@@ -66,9 +65,10 @@ app.get('/', function (req, res) {
 // ---------------------------------------------------------------------------------
 // Error handling
 // ---------------------------------------------------------------------------------
+
 //If we made it this far, none of our routes were triggered, so it is a 404
 app.use(function (req, res) {
     res.json({error: 404, path: req.path})
 })
 
-export default app
+module.exports = app

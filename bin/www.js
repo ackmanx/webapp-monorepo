@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-import http from "http"
-import debug from "debug"
-import app from "../src/app.js"
-
-const log = debug('mr:www')
+const http = require('http')
+const log = require('debug')('mr:www')
+const app = require('../src/app')
 
 const port = normalizePort(process.env.PORT || '3666')
 app.set('port', port)
