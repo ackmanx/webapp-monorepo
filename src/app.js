@@ -4,12 +4,15 @@ import logger from "morgan"
 import compression from "compression"
 import {dirname} from 'path';
 import {fileURLToPath} from 'url';
+import debug from "debug"
 
 import pinyinRouter from '../apps/pinyin/server/routes/router.js'
 import vocabRouter from '../apps/vocab/server/routes/router.js'
 
+const log = debug('mr:app')
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express()
+
 
 // ---------------------------------------------------------------------------------
 // Engine setup
@@ -32,6 +35,14 @@ app.use(compression())
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
+app.use(function (req, res, next) {
+    if (req.hostname === 'ialreadydidthat.com') {
+        req.url = `/pinyin/${req.path}`
+    }
+
+    next()
+})
+
 app.use('/pinyin', pinyinRouter)
 app.use('/vocab', vocabRouter)
 

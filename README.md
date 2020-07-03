@@ -29,12 +29,26 @@ To add a new application, you need to configure a few things:
 
 When developing, always start the node server at `npm start` and then whichever FE app you want to work on.
 
-`/etc/hosts` needs to have entries for each app if working with subdomains
-* `127.0.0.1	pinyin.me.com`
 
 ## Deploying
 
-Add instructions here on updating heroku and namecheap
+### Building
+1. Deploy the application
+1. Tell Heroku via package script to build the front-ends
+
+### DNS
+#### Heroku (Host)
+1. Go to settings for this application and find the Domains section
+1. Add Domain
+    * Example: www.majerus.me
+1. Heroku will provide a DNS target after you add it
+    * Example: asymmetrical-turtle-alw166i127vwd2j995ucszcp.herokudns.com
+
+#### Namecheap (DNS provider)
+1. Go to domain settings (manage domain)
+1. Go to Advanced DNS
+1. Edit the CNAME record so that the "value" points to the DNS target Heroku provided
+    * TTL: Automatic
 
 ## Cavet
 
