@@ -2,15 +2,13 @@ import express from "express"
 import cookieParser from "cookie-parser"
 import logger from "morgan"
 import compression from "compression"
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import {dirname} from 'path';
+import {fileURLToPath} from 'url';
 
 import pinyinRouter from '../apps/pinyin/server/routes/router.js'
 import vocabRouter from '../apps/vocab/server/routes/router.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
-
 const app = express()
 
 // ---------------------------------------------------------------------------------
@@ -30,14 +28,6 @@ app.use(cookieParser())
 app.use(express.static(`${__dirname}/../public`))
 app.use(compression())
 
-app.use(function (req, res, next) {
-    if (req.subdomains.length) {
-        req.url = `/${req.subdomains[0]}/${req.path}`
-    }
-
-    next()
-})
-
 
 // ---------------------------------------------------------------------------------
 // Routes
@@ -53,10 +43,9 @@ app.get('/', function (req, res) {
 // ---------------------------------------------------------------------------------
 // Error handling
 // ---------------------------------------------------------------------------------
-
 //If we made it this far, none of our routes were triggered, so it is a 404
 app.use(function (req, res) {
-    res.json({error: 404})
+    res.json({error: 404, path: req.path})
 })
 
 export default app

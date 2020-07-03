@@ -1,6 +1,7 @@
-<%# %>
-<%# Paths in this file are relative to the static server folder, which is `<project_root>/public` %>
-<%# %>
+<%#
+  This template is the starting point for every app hosted here
+  Paths in this file are relative to the static server folder, which is `<project_root>/public`
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
 <body>
 
 <div id="root"></div>
+<!-- All apps need to be have their bundle with this name -->
 <script src="<%= appName %>/bundle.js"></script>
 
 </body>
