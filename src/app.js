@@ -39,7 +39,8 @@ app.use(function (req, res, next) {
     log('hostname:', req.hostname)
 
     if (req.hostname === 'www.ialreadydidthat.com') {
-        req.url = `/pinyin/${req.path}`
+        //req.path already begins with a /
+        req.url = `/pinyin${req.path}`
     }
 
     next()
