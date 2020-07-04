@@ -22,14 +22,6 @@ app.use(cookieParser())
 app.use(express.static(`${__dirname}/../public`))
 app.use(compression())
 
-app.use(function (req, res, next) {
-    if (req.subdomains.length) {
-        req.url = `/${req.subdomains[0]}/${req.path}`
-    }
-
-    next()
-})
-
 // ---------------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------------
