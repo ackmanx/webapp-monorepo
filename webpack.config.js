@@ -23,7 +23,7 @@ module.exports = function () {
         resolve: {
             extensions: ['.js', '.jsx', '.json'],
         },
-        plugins: [new CopyWebpackPlugin([{from: `${appPath}/images`}])],
+        plugins: [new CopyWebpackPlugin({patterns: [{from: `${appPath}/images`}]})],
         module: {
             rules: [
                 {

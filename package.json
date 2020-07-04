@@ -3,14 +3,13 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
+        "build": "yarn clean; yarn pinyin:build:prod",
+        "clean": "rm -rf public",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js",
         "pinyin:build:prod": "yarn pinyin:clean; export APP=pinyin; export NODE_ENV=production; webpack",
         "pinyin:build:watch": "yarn pinyin:clean; export APP=pinyin; webpack --watch",
-        "pinyin:clean": "rm -rf public/pinyin",
-        "vocab:build:prod": "yarn vocab:clean; export APP=vocab; export NODE_ENV=production; webpack",
-        "vocab:build:watch": "yarn vocab:clean; export APP=vocab; webpack --watch",
-        "vocab:clean": "rm -rf public/vocab"
+        "pinyin:clean": "rm -rf public/pinyin"
     },
     "dependencies": {
         "@babel/plugin-proposal-class-properties": "7.5.5",

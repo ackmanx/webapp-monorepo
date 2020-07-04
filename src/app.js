@@ -2,6 +2,7 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const compression = require('compression')
+const log = require('debug')('mr:app')
 
 const app = express()
 
@@ -53,7 +54,6 @@ app.use(function (req, res, next) {
 })
 
 app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
-app.use('/vocab', require('../apps/vocab/server/routes/router'))
 
 app.get('/', function (req, res) {
     res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
