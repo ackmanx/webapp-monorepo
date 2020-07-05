@@ -1,10 +1,6 @@
 # Webapp Mono-Repo
 
-POC for hosting my applications on a single Heroku instance that allows you to pay for one hobby dyno only
-
-## Apps
-
-This mini mono-repo contains all the applications I host on my single Heroku instance. Each folder in the `apps` directory is a separate application. They have to first be registered with `master-slave` before you can serve them.
+Express application that hosts multiple apps using a single Heroku instance.
 
 ## Adding a New Application
 
@@ -16,21 +12,19 @@ To add a new application, you need to configure a few things:
     - `/apps/<app-name>/client/images/fav-icon.png`
         - If using a custom domain
 1. Register the new router with `app`
-1. Create npm scripts in `package.json`
-    - `<app-name>:build:prod`
-    - `<app-name>:build:watch`
-    - `<app-name>:clean`
+1. Update `heroku.sh` for deployment
 1. Set up DNS if using a custom domain (see below)
 1. Add a link to it in `app-selector.ejs`
 
-These apps are all currently SPA and do not have their own custom server side templates
+These apps are all currently SPAs and do not have their own custom server side templates
 
 ## Deploying
 
-### Building
-
-1. Deploy the application
-1. Tell Heroku via package script to build the front-ends (not tested yet)
+1. Just push to Heroku, `git push heroku`
+1. Heroku will install dependencies then run `heroku-postbuild`
+    - This will build all FE bundles
+1. Heroku will then run `yarn start`
+    - There's no build step for node
 
 ### DNS
 
