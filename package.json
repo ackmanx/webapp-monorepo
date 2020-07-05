@@ -5,10 +5,10 @@
     "private": true,
     "scripts": {
         "clean": "rm -rf public",
-        "heroku-postbuild": "yarn --cwd apps/pinyin build",
+        "heroku-postbuild": "yarn --cwd apps/pinyin",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js",
-        "pinyin:build": "yarn --cwd apps/pinyin"
+        "pinyin:build": "yarn --cwd apps/pinyin build"
     },
     "dependencies": {
         "compression": "1.7.4",
