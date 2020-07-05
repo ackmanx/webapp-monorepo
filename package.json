@@ -4,8 +4,8 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "build": "",
         "clean": "rm -rf public",
+        "heroku-postbuild": "sh bin/heroku.sh",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js",
         "pinyin:build": "yarn --cwd apps/pinyin build"
