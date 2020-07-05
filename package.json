@@ -8,7 +8,7 @@
         "heroku-postbuild": "yarn --cwd apps/pinyin build",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js",
-        "pinyin:build": "yarn --cwd apps/pinyin build"
+        "pinyin:build": "yarn --cwd apps/pinyin"
     },
     "dependencies": {
         "compression": "1.7.4",
