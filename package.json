@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "clean": "rm -rf public",
-        "heroku-postbuild": "yarn --cwd apps/pinyin; yarn --cwd apps/pinyin build",
+        "heroku-postbuild": "yarn --cwd apps/pinyin install --production=false; yarn --cwd apps/pinyin build",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js",
         "pinyin:build": "yarn --cwd apps/pinyin build"
