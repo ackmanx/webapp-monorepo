@@ -1,0 +1,27 @@
+{
+    "group1": {
+        "subgroup1": [
+            {
+                "name": "Whiskey",
+                "gender": "male",
+                "birthday": "2015-06-01"
+            }
+        ]
+    },
+    "group2": {
+        "subgroup1": [
+            {
+                "name": "Mr Awesome",
+                "gender": "male",
+                "birthday": "1984-03-26"
+            }
+        ],
+        "subgroup2": [
+            {
+                "name": "Last, First",
+                "gender": "male",
+                "birthday": "1983-12-31"
+            }
+        ]
+    }
+}

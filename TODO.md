@@ -1,3 +1,4 @@
 # Stuff I Gotta Do Still
 
-* Document how to deploy
+* Route registration for each app should be automatic
+    * Based off of apps/<app-name>

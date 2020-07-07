@@ -1,0 +1,23 @@
+h1 {
+    padding: 10px;
+    background-color: #2196F4;
+    color: white;
+}
+
+ul {
+    padding: 0;
+    vertical-align: top;
+}
+
+li {
+    font-size: 18px;
+    width: calc(50% - 20px);
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+}
+
+li:nth-child(4n),
+li:nth-child(4n - 1){
+    background-color: #ececec;
+}

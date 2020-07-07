@@ -4,6 +4,10 @@ Express application that hosts multiple apps using a single Heroku instance.
 
 ## Adding a New Application
 
+There are multiple `package.json` files in this repo:
+* `packagejson`: This is the main application and contains the server-side dependencies for every hosted app and some tooling
+* `apps/<app-name>/package.json`: This is primarily the front-end side of each hosted app
+
 To add a new application, you need to configure a few things:
 
 1. Scaffold the app

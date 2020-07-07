@@ -1,0 +1,27 @@
+{
+    "name": "how-old-is-question-mark",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "yarn clean; export APP=how-old-is; export NODE_ENV=production; webpack",
+        "build:dev": "yarn clean; export APP=how-old-is; webpack --watch",
+        "clean": "rm -rf ../../public/pinyin"
+    },
+    "dependencies": {
+        "moment": "2.22.2",
+        "react": "15.6.1",
+        "react-dom": "15.6.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.10.4",
+        "@babel/core": "7.10.4",
+        "@babel/polyfill": "7.10.4",
+        "@babel/preset-env": "7.10.4",
+        "@babel/preset-react": "7.10.4",
+        "babel-loader": "8.1.0",
+        "css-loader": "3.6.0",
+        "style-loader": "1.2.1",
+        "webpack": "4.43.0",
+        "webpack-cli": "3.3.12"
+    }
+}
