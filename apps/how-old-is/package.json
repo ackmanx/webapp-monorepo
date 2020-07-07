@@ -5,7 +5,7 @@
     "scripts": {
         "build": "yarn clean; export APP=how-old-is; export NODE_ENV=production; webpack",
         "build:dev": "yarn clean; export APP=how-old-is; webpack --watch",
-        "clean": "rm -rf ../../public/pinyin"
+        "clean": "rm -rf ../../public/how-old-is"
     },
     "dependencies": {
         "moment": "2.22.2",
