@@ -2,6 +2,11 @@
 
 Express application that hosts multiple apps using a single Heroku instance.
 
+## Developing an Application
+
+Start the Express server with `yarn start` from project root. Then start the FE build for whichever application you want to develop.
+
+
 ## Adding a New Application
 
 There are multiple `package.json` files in this repo:
