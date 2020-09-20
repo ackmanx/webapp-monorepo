@@ -5,6 +5,7 @@ Express application that hosts multiple apps using a single Heroku instance.
 `https://webapp-monorepo.herokuapp.com`: Heroku-hosted main entry point
 `http://www.majerus.me`: Custom domain example main entry point
 `http://www.ialreadydidthat.com`: Custom domain example specific app entry point
+    * Not working right now because bundle isn't found. Might need to update server template to add app name to bundle if needed
 
 ## Developing an Application
 Start the Express server with `yarn start` from project root. Then start the FE build for whichever application you want to develop.
