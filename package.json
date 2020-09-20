@@ -1,6 +1,6 @@
 {
+    "_NOTES": "This package file is for the server application and global build tooling. Each app will have its own for FE building",
     "name": "webapp-monorepo",
-    "__NOTES": "This package file is for the server application and global build tooling. Each app will have its own for FE building",
     "version": "0.0.0",
     "private": true,
     "scripts": {
@@ -9,6 +9,9 @@
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "node bin/www.js"
     },
+    "workspaces": [
+        "apps/*"
+    ],
     "dependencies": {
         "compression": "1.7.4",
         "cookie-parser": "1.4.5",

@@ -10,6 +10,8 @@ Express application that hosts multiple apps using a single Heroku instance.
 ## Developing an Application
 Start the Express server with `yarn start` from project root. Then start the FE build for whichever application you want to develop.
 
+If you aren't seeing server logs, make sure you have `DEBUG=mr:*` set for the debug module to output
+
 ## Adding a New Application
 The idea is that all applications run off the same server and then add their own custom server code scoped to their app. Being a FE is just a built JS app, all FE should be able to be written however I want as long as they result a predictable bundle to reference.
 
