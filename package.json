@@ -7,7 +7,7 @@
         "clean": "rm -rf public",
         "heroku-postbuild": "sh bin/build-all-frontends.sh",
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
-        "start": "DEBUG='mr:*'; node bin/www.js"
+        "start": "DEBUG='mr:*'; yarn node bin/www.js"
     },
     "workspaces": [
         "apps/*"
