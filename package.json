@@ -10,6 +10,7 @@
         "start": "DEBUG='mr:*'; node bin/www.js"
     },
     "workspaces": [
+        ".yarn/cache",
         "apps/*"
     ],
     "dependencies": {
