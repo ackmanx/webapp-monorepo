@@ -9,9 +9,6 @@
         "prettier": "prettier --config ./prettier.config.js --write './**/*.{js,json}'",
         "start": "DEBUG='mr:*'; node bin/www.js"
     },
-    "cacheDirectories": [
-        ".yarn/cache"
-    ],
     "workspaces": [
         "apps/*"
     ],
