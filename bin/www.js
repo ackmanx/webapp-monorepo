@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const http = require('http')
-const log = require('debug')('mr:www')
+// const log = require('debug')('mr:www')
 const app = require('../src/app')
 
 const port = normalizePort(process.env.PORT || '3666')
@@ -53,5 +53,5 @@ function onError(error) {
 function onListening() {
     const addr = server.address()
     const bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port
-    log('Listening on ' + bind)
+    // log('Listening on ' + bind)
 }
