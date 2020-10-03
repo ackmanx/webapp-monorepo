@@ -61,7 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lowdb", "npm:1.0.0"],
             ["morgan", "npm:1.10.0"],
             ["node-fetch", "npm:2.6.0"],
-            ["prettier", "npm:2.0.5"],
+            ["prettier", "npm:2.1.2"],
             ["querystring", "npm:0.2.0"],
             ["uuid", "npm:8.2.0"]
           ],
@@ -5736,10 +5736,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.0.5", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.0.5-f0ee4e15ce-d249d89361.zip/node_modules/prettier/",
+        ["npm:2.1.2", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.1.2-9d456ef3cd-bedc24c568.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.0.5"]
+            ["prettier", "npm:2.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -7189,7 +7189,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lowdb", "npm:1.0.0"],
             ["morgan", "npm:1.10.0"],
             ["node-fetch", "npm:2.6.0"],
-            ["prettier", "npm:2.0.5"],
+            ["prettier", "npm:2.1.2"],
             ["querystring", "npm:0.2.0"],
             ["uuid", "npm:8.2.0"]
           ],
