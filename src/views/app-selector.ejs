@@ -32,17 +32,11 @@
 </head>
 <body>
 
-<a href="/how-old-is">
-    <div>how old is?</div>
-</a>
-
-<a href="/i-already-did-that">
-    <div>i already did that</div>
-</a>
-
-<a href="/pinyin">
-    <div>pinyin</div>
-</a>
+<% appInfos.forEach(app => { %>
+    <a href="<%= app.url %>">
+        <div><%= app.name %></div>
+    </a>
+<% }) %>
 
 </body>
 </html>

@@ -3,6 +3,8 @@ const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const compression = require('compression')
 const log = require('debug')('mr:app')
+const fs = require('fs')
+const path = require('path')
 
 const app = express()
 
@@ -44,12 +46,22 @@ app.use(function (req, res, next) {
     next()
 })
 
-app.use('/how-old-is', require('../apps/how-old-is/server/routes/router'))
-app.use('/i-already-did-that', require('../apps/i-already-did-that/server/routes/router'))
-app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
+const appInfos = []
+
+fs.readdirSync(path.join(__dirname, '..', 'apps')).forEach(appName => {
+    if (!fs.lstatSync(path.resolve('apps', appName)).isDirectory()) return
+
+    const packageJson = require(path.resolve('apps', appName, `package.json`))
+
+    log(`Registering Express routes for ${packageJson.name}`)
+
+    appInfos.push({url: `/${packageJson.name}`, name: packageJson.name.split('-').join(' ')})
+
+    app.use(`/${packageJson.name}`, require(`../apps/${packageJson.name}/server/routes/router`))
+})
 
 app.get('/', function (req, res) {
-    res.render('app-selector', {title: '干净', isProd: process.env.NODE_ENV === 'production'})
+    res.render('app-selector', {title: `It's so mono, this webapp`, appInfos})
 })
 
 // ---------------------------------------------------------------------------------

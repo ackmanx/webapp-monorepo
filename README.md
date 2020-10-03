@@ -18,17 +18,12 @@ There are multiple `package.json` files in this repo:
 * `package.json`: This is the main application and contains the server-side dependencies for every hosted app and some tooling
 * `apps/<app-name>/package.json`: The package file of a hosted app. This contains all FE dependencies as well as any imported BE dependencies used within this app folder. Yarn 2 requires dependencies to be explicitly listed if they are used, so you cannot just bank off of a parent `package.json` file.
 
-To add a new application, you need to configure a few things:
+To add a new application, you need to do a few things:
 
-1. Scaffold the app
-    - `/apps/<app-name>/server/routes/router.js` to point the app to a template file
-    - `/apps/<app-name>/client/index.js` as a starting point for the UI
-    - `/apps/<app-name>/client/images/fav-icon.png`
-        - If using a custom domain
-1. Register the new router with `app`
-1. Update `heroku.sh` for deployment
+1. Copy/modify an existing app to use
+1. Update the `package.json`
+1. Update `build-all-frontends.sh` for deployment
 1. Set up DNS if using a custom domain (see below)
-1. Add a link to it in `app-selector.ejs`
 
 These apps are all currently SPAs and do not have their own custom server side templates
 
