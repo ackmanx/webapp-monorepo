@@ -2,10 +2,9 @@
 Express application that hosts multiple apps using a single Heroku instance.
 
 ## Entry Points
-`https://webapp-monorepo.herokuapp.com`: Heroku-hosted main entry point
-`http://www.majerus.me`: Custom domain example main entry point
-`http://www.ialreadydidthat.com`: Custom domain example specific app entry point
-    * Not working right now because bundle isn't found. Might need to update server template to add app name to bundle if needed
+`https://webapp-monorepo.herokuapp.com`: Heroku-hosted main app entry point
+`http://www.majerus.me`: Custom domain example main app entry point
+`http://www.ialreadydidthat.com`: Custom domain app-specific entry point
 
 ## Developing an Application
 Start the Express server with `yarn start` from project root. Then start the FE build for whichever application you want to develop.
@@ -17,7 +16,7 @@ The idea is that all applications run off the same server and then add their own
 
 There are multiple `package.json` files in this repo:
 * `package.json`: This is the main application and contains the server-side dependencies for every hosted app and some tooling
-* `apps/<app-name>/package.json`: This is primarily the front-end side of each hosted app, because server modules can be added to the host application's `package.json`
+* `apps/<app-name>/package.json`: The package file of a hosted app. This contains all FE dependencies as well as any imported BE dependencies used within this app folder. Yarn 2 requires dependencies to be explicitly listed if they are used, so you cannot just bank off of a parent `package.json` file.
 
 To add a new application, you need to configure a few things:
 

@@ -27,18 +27,17 @@ app.use(compression())
 // ---------------------------------------------------------------------------------
 /*
  * The way this works is if a site is hosted with a custom domain, we want that site to act like its own
- * So, we register it below and change the URL for any request coming from that site so that the app handles it
- * But, the request is only rewritten from the server's perspective
+ * So, we change the URL for any request coming from that site to one that the app can handle
+ * Request is only rewritten from the server's perspective
  *
  * Example:
  *   A user goes to www.ialreadydidthat.com/something
- *   The url is prefixed with "/pinyin" so that the router for this application processes it
+ *   The url is prefixed with "/i-already-did-that" so that the router for this application processes it
  */
 app.use(function (req, res, next) {
     log('hostname:', req.hostname)
 
     if (req.hostname === 'www.ialreadydidthat.com') {
-        //req.path already begins with a /
         req.url = `/pinyin${req.path}`
     }
 
