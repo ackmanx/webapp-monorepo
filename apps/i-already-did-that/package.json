@@ -1,0 +1,27 @@
+{
+    "name": "i-already-did-that",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "build": "yarn clean; APP=i-already-did-that; NODE_ENV=production; webpack",
+        "build:dev": "yarn clean; APP=i-already-did-that; webpack --watch",
+        "clean": "rm -rf ../../public/i-already-did-that"
+    },
+    "dependencies": {
+        "express": "4.17.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.11.6",
+        "@babel/core": "7.11.6",
+        "@babel/polyfill": "7.11.5",
+        "@babel/preset-env": "7.11.5",
+        "@babel/preset-react": "7.10.4",
+        "babel-loader": "8.1.0",
+        "css-loader": "4.3.0",
+        "style-loader": "1.2.1",
+        "webpack": "next",
+        "webpack-cli": "3.3.12"
+    }
+}

@@ -3322,6 +3322,26 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"i-already-did-that@workspace:apps/i-already-did-that":
+  version: 0.0.0-use.local
+  resolution: "i-already-did-that@workspace:apps/i-already-did-that"
+  dependencies:
+    "@babel/cli": 7.11.6
+    "@babel/core": 7.11.6
+    "@babel/polyfill": 7.11.5
+    "@babel/preset-env": 7.11.5
+    "@babel/preset-react": 7.10.4
+    babel-loader: 8.1.0
+    css-loader: 4.3.0
+    express: 4.17.1
+    react: 16.13.1
+    react-dom: 16.13.1
+    style-loader: 1.2.1
+    webpack: next
+    webpack-cli: 3.3.12
+  languageName: unknown
+  linkType: soft
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"

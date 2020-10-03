@@ -46,6 +46,7 @@ app.use(function (req, res, next) {
 })
 
 app.use('/how-old-is', require('../apps/how-old-is/server/routes/router'))
+app.use('/i-already-did-that', require('../apps/i-already-did-that/server/routes/router'))
 app.use('/pinyin', require('../apps/pinyin/server/routes/router'))
 
 app.get('/', function (req, res) {
