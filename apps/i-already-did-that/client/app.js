@@ -1,6 +1,25 @@
 import './app.css'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import AppContext from './app-context'
+import {Things} from './things'
 
 export const App = () => {
-    return <h1>Oh wow, I already did that!</h1>
+    const [appState, setAppState] = useState({})
+
+    useEffect(() => {
+        async function handleFetch() {
+            const response = await fetch('something')
+            setAppState(await response.json())
+        }
+
+        handleFetch()
+    }, [setAppState])
+
+    if (!Array.isArray(appState)) return null
+
+    return (
+        <AppContext.Provider value={appState}>
+            <Things />
+        </AppContext.Provider>
+    )
 }

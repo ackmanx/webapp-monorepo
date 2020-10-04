@@ -12,4 +12,11 @@ router.get('/', function (req, res) {
     })
 })
 
+router.get('/something', function (req, res) {
+    res.json([
+        {title: 'Shower', instances: ['1601768240', '1601358240']},
+        {title: 'Mow Lawn', instances: ['1601768240', '1601358240']},
+    ])
+})
+
 module.exports = router
