@@ -2,6 +2,7 @@ import './app.css'
 import React, {useEffect, useState} from 'react'
 import AppContext from './app-context'
 import {Things} from './things'
+import {MenuBar} from './menu-bar'
 
 export const App = () => {
     const [appState, setAppState] = useState({})
@@ -19,6 +20,7 @@ export const App = () => {
 
     return (
         <AppContext.Provider value={appState}>
+            <MenuBar />
             <Things />
         </AppContext.Provider>
     )
